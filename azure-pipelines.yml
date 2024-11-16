@@ -9,14 +9,14 @@ pr:
       - "*"
 
 variables:
-- group: AzCred 
-  azureSubscription: '1a8f5438-2e23-4a1f-b53c-3ebf42a36c48'  # Ваш Azure subscription ID
+  azureSubscription: 'BlessedXd1'
   appName: 'bestorngWebAp77p'
   imageRepository: 'my-image'
-  containerRegistry: '$(acr_name).azurecr.io'  # Використовуємо $(acr_name) з групи змінних
+  containerRegistry: $(ACR_NAME).azurecr.io
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
   vmImageName: 'ubuntu-latest'
+
 
 stages:
 - stage: Build_Push
