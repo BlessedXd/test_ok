@@ -11,6 +11,7 @@ pr:
 variables:
   azureSubscription: 'BlessedXd1'
   appName: 'bestorngWebAp77p'
+  ACR_NAME: 'valeriy77registry'
   imageRepository: 'my-image'
   containerRegistry: $(ACR_NAME).azurecr.io
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
